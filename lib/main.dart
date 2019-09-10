@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(KestrelApp());
+import './text/text_control.dart';
 
-class KestrelApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return null;
-  }
-}
+main() => runApp(MyApp());
 
-class Home extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return null;
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Assignment 1'),
+        ),
+        body: TextControl(),
+      ),
+    );
   }
 }
